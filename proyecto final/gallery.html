@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fotografía de alimentos - El Fisherman</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0; padding: 0;
+        background: #f9f9f9;
+        color: #333;
+      }
+      header {
+        background-color: #2F43A0;
+        padding: 20px 40px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      header img {
+        height: 50px;
+      }
+      nav a {
+        color: white;
+        margin-left: 25px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1rem;
+      }
+      nav a:hover {
+        text-decoration: underline;
+      }
+      main {
+        max-width: 1000px;
+        margin: 40px auto;
+        padding: 0 20px;
+      }
+      h1 {
+        text-align: center;
+        color: #2F43A0;
+        margin-bottom: 10px;
+      }
+      p.description {
+        max-width: 700px;
+        margin: 0 auto 40px auto;
+        font-size: 1.1rem;
+        text-align: center;
+        line-height: 1.6;
+      }
+      .gallery {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+      }
+      .gallery img {
+        width: 300px;
+        border-radius: 8px;
+        box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+        transition: transform 0.3s ease;
+        cursor: pointer;
+      }
+      .gallery img:hover {
+        transform: scale(1.05);
+      }
+      .buttons {
+        text-align: center;
+        margin-bottom: 60px;
+      }
+      .buttons button {
+        background-color: #2F43A0;
+        color: white;
+        border: none;
+        padding: 12px 25px;
+        margin: 0 10px;
+        border-radius: 6px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      .buttons button:hover {
+        background-color: #1b2a66;
+      }
+      footer {
+        background-color: #313030;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="images/logocolor.png" alt="El Fisherman Logo">
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="trabajos-de-identidad-visual.html">Identidad Visual</a>
+        <a href="trabajos-para-redes-sociales.html">Redes Sociales</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Fotografía de Alimentos - El Fisherman</h1>
+      <p class="description">
+        Soy Ricardo Murguía, fotógrafo especializado en capturar la esencia y frescura de los mariscos y platillos de cada restaurante, escoje el estilo gastronómico fotografico que más se adapte a tu restaurante!!.
+      </p>
+
+      <div class="gallery" id="gallery">
+        <img src="Captura-de-pantalla-2025-05-16-a-la(s)-10.16.04---p.m..png" alt="Descripción de la imagen" />
+      
+        <img src="Captura-de-pantalla-2025-05-16-a-la(s)-10.17.58---p.m..png" alt="Descripción de la imagen" />
+      </div>
+
+      <div class="buttons">
+        <button onclick="showNext()">Siguiente</button>
+        <button onclick="showPrevious()">Anterior</button>
+      </div>
+    </main>
+
+    <footer>
+      <p>© 2025 El Fisherman. Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>
